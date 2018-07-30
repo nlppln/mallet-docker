@@ -1,0 +1,15 @@
+*.pyc
+*.egg-info
+
+# data
+*.txt
+*.out
+*.csv
+
+!requirements.txt
+
+bower_components
+node_modules
+build
+dist
+*.ipynb_checkpoints
