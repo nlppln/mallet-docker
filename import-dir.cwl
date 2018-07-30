@@ -20,63 +20,63 @@ inputs:
     type: string
     inputBinding:
       prefix: --output
-  use-pipe-from:
+  usePipeFrom:
     type: File?
     inputBinding:
       prefix: --use-pipe-from
-  preserve-case:
+  preserveCase:
     type: boolean?
     inputBinding:
       prefix: --preserve-case
-  replacement-files:
+  replacementFiles:
     type: File[]?
     inputBinding:
       prefix: --replacement-files
-  deletion-files:
+  deletionFiles:
     type: File[]?
     inputBinding:
       prefix: --deletion-files
-  remove-stopwords:
+  removeStopwords:
     type: boolean?
     inputBinding:
       prefix: --remove-stopwords
-  stoplist-file:
+  stoplistFile:
     type: File?
     inputBinding:
       prefix: --stoplist-file
-  extra-stopwords:
+  extraStopwords:
     type: File?
     inputBinding:
       prefix: --extra-stopwords
-  stop-pattern-file:
+  stopPatternFile:
     type: File?
     inputBinding:
       prefix: --stop-pattern-file
-  skip-header:
+  skipHeader:
     type: boolean?
     inputBinding:
       prefix: --skip-header
-  skip-html:
+  skipHtml:
     type: boolean?
     inputBinding:
       prefix: --skip-html
-  binary-features:
+  binaryFeatures:
     type: boolean?
     inputBinding:
       prefix: --binary-features
-  gram-sizes:
+  gramSizes:
     type: int[]?
     inputBinding:
       prefix: --gram-sizes
-  keep-sequence:
+  keepSequence:
     type: boolean?
     inputBinding:
       prefix: --keep-sequence
-  keep-sequence-bigrams:
+  keepSequenceBigrams:
     type: boolean?
     inputBinding:
       prefix: --keep-sequence-bigrams
-  save-text-in-source:
+  saveTextInSource:
     type: boolean?
     inputBinding:
       prefix: --save-text-in-source
@@ -84,11 +84,11 @@ inputs:
     type: string?
     inputBinding:
       prefix: --encoding
-  token-regex:
+  tokenRegex:
     type: string?
     inputBinding:
       prefix: --token-regex
-  print-output:
+  printOutput:
     type: boolean?
     inputBinding:
       prefix: --print-output
