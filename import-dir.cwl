@@ -18,7 +18,6 @@ inputs:
       prefix: --input
   output:
     type: string
-    default: text.vectors
     inputBinding:
       prefix: --output
   use-pipe-from:
@@ -27,7 +26,6 @@ inputs:
       prefix: --use-pipe-from
   preserve-case:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --preserve-case
   replacement-files:
@@ -40,7 +38,6 @@ inputs:
       prefix: --deletion-files
   remove-stopwords:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --remove-stopwords
   stoplist-file:
@@ -57,52 +54,42 @@ inputs:
       prefix: --stop-pattern-file
   skip-header:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --skip-header
   skip-html:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --skip-html
   binary-features:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --binary-features
   gram-sizes:
     type: int[]?
-    default: [1]
     inputBinding:
       prefix: --gram-sizes
   keep-sequence:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --keep-sequence
   keep-sequence-bigrams:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --keep-sequence-bigrams
   save-text-in-source:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --save-text-in-source
   encoding:
     type: string?
-    default: utf-8
     inputBinding:
       prefix: --encoding
   token-regex:
     type: string?
-    default: \p{L}[\p{L}\p{P}]+\p{L}
     inputBinding:
       prefix: --token-regex
   print-output:
     type: boolean?
-    default: false
     inputBinding:
       prefix: --print-output
 
