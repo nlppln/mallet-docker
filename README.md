@@ -34,3 +34,5 @@ Because we want to capture names of output files from the input, the input and o
 ## Regex for space separated tokens
 
 If you want to use custom tokenization, you can save your texts with space separated tokens, and then use the command with `--token-regex \S+` (or `--tokenRegex \\S+` if yu use the CWL specification). `\S+` matches anything not whitespace.
+
+For non-western scripts, such as Arabic, the suggested regex is `'[\p{L}\p{M}]+'`, which includes unicode letters and marks.
