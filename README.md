@@ -2,7 +2,7 @@
 
 Docker container and [CWL specification](http://www.commonwl.org/) to use [mallet](http://mallet.cs.umass.edu/).
 
-Mallet has different sub-commands. Currently, this repository contains CWL specifications of `import-dir` and `train-topics`.
+Mallet has different sub-commands. Currently, this repository contains CWL specifications of `import-file`, `import-dir` and `train-topics`.
 
 To be able to use these tools in nlppln, do:
 
@@ -10,6 +10,7 @@ To be able to use these tools in nlppln, do:
 from nlppln import WorkflowGenerator
 
 with WorkflowGenerator() as wf:
+	wf.load(step_file='https://raw.githubusercontent.com/nlppln/mallet-docker/master/import-file.cwl')
 	wf.load(step_file='https://raw.githubusercontent.com/nlppln/mallet-docker/master/import-dir.cwl')
 	wf.load(step_file='https://raw.githubusercontent.com/nlppln/mallet-docker/master/train-topics.cwl')
 
@@ -24,6 +25,8 @@ with WorkflowGenerator() as wf:
 	# add workflow outputs
 	# save workflow to file
 ```
+
+We recommend using `import-file` (one document per line) over `import dir` (one document per file), because if there are too many files (around tens of thousands), docker will crash on the many file mappings that need to be made.
 
 `train-topics` has many outputs. These are null, unless the name of the output is set through the corresponding input.
 
